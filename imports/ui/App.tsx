@@ -1,5 +1,7 @@
 import React from "react";
 
+import myJson from "/package.json";
+
 const BOX_CLASS =
   "flex items-center justify-between p-4 transition-all border rounded-lg shadow-md border-slate-200 hover:shadow-lg bg-white";
 
@@ -18,42 +20,53 @@ export const App = () => (
       MeteorUI helps you kickstart your following Meteor project by including
       the following packages:
     </p>
-    <div className="flex flex-col w-1/2 gap-4 pt-8 lg:w-1/4">
+    <div className="flex flex-col w-1/2 gap-4 py-8 lg:w-1/4">
       <div className={BOX_CLASS}>
         <div className="flex items-center gap-4">
           <img src="/meteor.svg" className="w-8"></img>
           <p className="text-lg font-bold text-slate-600">Meteor</p>
         </div>
-        <div className={TAG_CLASS}>v2.8.0</div>
+        <div className={TAG_CLASS}>v2.8.1</div>
       </div>
       <div className={BOX_CLASS}>
         <div className="flex items-center gap-4">
           <img src="/react.png" className="w-8"></img>
           <p className="text-lg font-bold text-slate-600">React</p>
         </div>
-        <div className={TAG_CLASS}>v17.0.2</div>
+        <div className={TAG_CLASS}>
+          v{myJson.dependencies.react.replace("^", "")}
+        </div>
       </div>
       <div className={BOX_CLASS}>
         <div className="flex items-center gap-4">
           <img src="/typescript.png" className="w-8"></img>
           <p className="text-lg font-bold text-slate-600">TypeScript</p>
         </div>
-        <div className={TAG_CLASS}>v4.6.3</div>
+        <div className={TAG_CLASS}>
+          v{myJson.devDependencies.typescript.replace("^", "")}
+        </div>
       </div>
       <div className={BOX_CLASS}>
         <div className="flex items-center gap-4">
           <img src="/tailwindcss.png" className="w-8"></img>
           <p className="text-lg font-bold text-slate-600">TailwindCSS</p>
         </div>
-        <div className={TAG_CLASS}>v3.2.4</div>
+        <div className={TAG_CLASS}>
+          v{myJson.devDependencies.tailwindcss.replace("^", "")}
+        </div>
       </div>
       <div className={BOX_CLASS}>
         <div className="flex items-center gap-4">
           <img src="/storybook.png" className="w-8"></img>
           <p className="text-lg font-bold text-slate-600">StoryBook</p>
         </div>
-        <div className={TAG_CLASS}>v6.5.13</div>
+        <div className={TAG_CLASS}>
+          v{myJson.devDependencies["@storybook/react"].replace("^", "")}
+        </div>
       </div>
     </div>
+    <p className="text-base italic text-slate-400">
+      Last updated: 3 December 2022
+    </p>
   </div>
 );
