@@ -10,13 +10,13 @@ const TAG_CLASS =
 
 export const App = () => (
   <div className="flex flex-col items-center justify-center w-full h-screen bg-slate-100">
-    <h1 className="mb-4 text-3xl font-extrabold text-slate-800 dark:text-white md:text-5xl lg:text-6xl">
+    <h1 className="mb-4 text-3xl font-bold text-slate-700 dark:text-white md:text-5xl lg:text-6xl">
       Welcome to{" "}
       <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-sky-500">
         MeteorUI
       </span>
     </h1>
-    <p className="text-lg font-normal text-slate-600 lg:text-lg dark:text-slate-400">
+    <p className="text-lg font-normal text-slate-500 lg:text-lg dark:text-slate-400">
       MeteorUI helps you kickstart your following Meteor project by including
       the following packages:
     </p>
@@ -24,14 +24,14 @@ export const App = () => (
       <div className={BOX_CLASS}>
         <div className="flex items-center gap-4">
           <img src="/meteor.svg" className="w-8"></img>
-          <p className="text-lg font-bold text-slate-600">Meteor</p>
+          <p className="text-lg font-semibold text-slate-600">Meteor</p>
         </div>
         <div className={TAG_CLASS}>v2.8.1</div>
       </div>
       <div className={BOX_CLASS}>
         <div className="flex items-center gap-4">
           <img src="/react.png" className="w-8"></img>
-          <p className="text-lg font-bold text-slate-600">React</p>
+          <p className="text-lg font-semibold text-slate-600">React</p>
         </div>
         <div className={TAG_CLASS}>
           v{myJson.dependencies.react.replace("^", "")}
@@ -40,7 +40,7 @@ export const App = () => (
       <div className={BOX_CLASS}>
         <div className="flex items-center gap-4">
           <img src="/typescript.png" className="w-8"></img>
-          <p className="text-lg font-bold text-slate-600">TypeScript</p>
+          <p className="text-lg font-semibold text-slate-600">TypeScript</p>
         </div>
         <div className={TAG_CLASS}>
           v{myJson.devDependencies.typescript.replace("^", "")}
@@ -49,7 +49,7 @@ export const App = () => (
       <div className={BOX_CLASS}>
         <div className="flex items-center gap-4">
           <img src="/tailwindcss.png" className="w-8"></img>
-          <p className="text-lg font-bold text-slate-600">TailwindCSS</p>
+          <p className="text-lg font-semibold text-slate-600">TailwindCSS</p>
         </div>
         <div className={TAG_CLASS}>
           v{myJson.devDependencies.tailwindcss.replace("^", "")}
@@ -58,7 +58,7 @@ export const App = () => (
       <div className={BOX_CLASS}>
         <div className="flex items-center gap-4">
           <img src="/storybook.png" className="w-8"></img>
-          <p className="text-lg font-bold text-slate-600">StoryBook</p>
+          <p className="text-lg font-semibold text-slate-600">StoryBook</p>
         </div>
         <div className={TAG_CLASS}>
           v{myJson.devDependencies["@storybook/react"].replace("^", "")}
