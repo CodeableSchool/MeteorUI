@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DarkToggle from "./components/DarkToggle";
 
 import VERSIONS from "/package.json";
 
 const BOX_CLASS =
-  "flex items-center justify-between p-2 md:p-4 transition-all border rounded-lg shadow-md border-slate-200 hover:shadow-lg bg-white dark:bg-slate-600 dark:border-slate-500 dark:text-slate-100 text-slate-600 hover:py-5 hover:my-1 my-2 font-xs md:font-base";
+  "flex items-center justify-between p-2 md:p-4 transition-all border rounded-lg shadow-md border-slate-200 hover:shadow-lg bg-white dark:bg-slate-600 dark:border-slate-500 dark:text-slate-100 text-slate-600 hover:py-3 hover:md:py-5 hover:my-1 my-2 font-xs md:font-base";
 
 const TAG_CLASS =
   "px-4 py-2 text-sm font-bold rounded-lg bg-sky-100 text-primary-500 dark:text-primary-100 dark:bg-primary-700 dark:border-primary-600 dark:border";
