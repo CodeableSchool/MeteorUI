@@ -4,7 +4,7 @@ import DarkToggle from "./components/DarkToggle";
 import VERSIONS from "/package.json";
 
 const BOX_CLASS =
-  "flex items-center justify-between p-4 transition-all border rounded-lg shadow-md border-slate-200 hover:shadow-lg bg-white dark:bg-slate-600 dark:border-slate-500 dark:text-slate-100 text-slate-600 hover:py-5 hover:my-1 my-2";
+  "flex items-center justify-between p-2 md:p-4 transition-all border rounded-lg shadow-md border-slate-200 hover:shadow-lg bg-white dark:bg-slate-600 dark:border-slate-500 dark:text-slate-100 text-slate-600 hover:py-5 hover:my-1 my-2 font-xs md:font-base";
 
 const TAG_CLASS =
   "px-4 py-2 text-sm font-bold rounded-lg bg-sky-100 text-primary-500 dark:text-primary-100 dark:bg-primary-700 dark:border-primary-600 dark:border";
@@ -19,11 +19,11 @@ function App() {
           MeteorUI
         </span>
       </h1>
-      <p className="px-12 text-lg font-normal text-center text-slate-500 lg:text-lg dark:text-slate-400">
+      <p className="px-12 text-base font-normal text-center md:text-lg text-slate-500 lg:text-lg dark:text-slate-400">
         MeteorUI helps you kickstart your following Meteor project by including
         the following packages:
       </p>
-      <div className="flex flex-col w-2/3 py-8 md:w-1/2 xl:w-1/4">
+      <div className="flex flex-col w-full p-8 py-4 md:py-8 md:w-1/2 xl:w-1/4">
         <div className={BOX_CLASS}>
           <div className="flex items-center gap-4">
             <img src="/meteor.svg" className="w-8"></img>
@@ -68,7 +68,7 @@ function App() {
           </div>
         </div>
       </div>
-      <p className="text-base italic text-slate-400">
+      <p className="text-xs italic md:text-base text-slate-400">
         Last updated: 3 December 2022
       </p>
     </div>

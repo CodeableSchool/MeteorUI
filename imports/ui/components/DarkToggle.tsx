@@ -1,22 +1,42 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+
+type theme = "light" | "dark";
 
 function DarkToggle() {
   const [isDarkTheme, toggleIsDarkTheme] = useState(
     localStorage.theme === "dark"
   );
 
+  function setLightTheme() {
+    document.documentElement.classList.remove("dark");
+    localStorage.theme = "light";
+    toggleIsDarkTheme(false);
+  }
+
+  function setDarkTheme() {
+    document.documentElement.classList.add("dark");
+    localStorage.theme = "dark";
+    toggleIsDarkTheme(true);
+  }
+
   function toggleDarkMode() {
     const currentTheme = localStorage.theme;
-    if (currentTheme === "dark") {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "light";
-      toggleIsDarkTheme(false);
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-      toggleIsDarkTheme(true);
-    }
+    if (currentTheme === "dark") setLightTheme();
+    else setDarkTheme();
   }
+
+  useEffect(() => {
+    const currentTheme = localStorage.theme;
+    if (currentTheme === "dark") setDarkTheme();
+    else setLightTheme();
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (event) => {
+        const colorScheme: theme = event.matches ? "dark" : "light";
+        colorScheme === "dark" ? setDarkTheme() : setLightTheme();
+      });
+  }, []);
+
   return (
     <div className="absolute flex right-5 md:right-10 top-5 md:top-10">
       <label className="relative inline-flex items-center cursor-pointer">
