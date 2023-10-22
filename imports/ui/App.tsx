@@ -23,7 +23,7 @@ function App() {
         MeteorUI helps you kickstart your following Meteor project by including
         the following packages:
       </p>
-      <div className="flex flex-col w-full p-8 py-4 md:py-8 md:w-1/2 xl:w-1/4">
+      <div className="flex flex-col w-full p-8 py-4 md:py-8 md:w-2/3 lg:w-1/3 2xl:w-1/4">
         <div className={BOX_CLASS}>
           <div className="flex items-center gap-4">
             <img src="/meteor.svg" className="w-8"></img>
@@ -69,7 +69,7 @@ function App() {
         </div>
       </div>
       <p className="text-xs italic md:text-base text-slate-400">
-        Last updated: 3 December 2022
+        Last updated: 8 September 2023
       </p>
     </div>
   );
