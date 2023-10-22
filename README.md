@@ -1,10 +1,10 @@
 ![](https://media.macosicons.com/parse/files/macOSicons/761f86d0adb29a12fe9d63ea0e7111d1_low_res_React___Folder.png)
 # MeteorUI
-MeteorUI allows you to get up and running with the latest full-stack framework that includes the following (last updated `November 14, 2022`):
-- Meteor: `version 2.9.0`
-- React: `version 17.0.2`
+MeteorUI allows you to get up and running with the latest full-stack framework that includes the following (last updated `October 22, 2023`):
+- Meteor: `version 2.13.3`
+- React: `version 18.2.0`
 - TypeScript: `version 4.9.4`
-- TailwindCSS: `version 3.2.4`
+- TailwindCSS: `version 3.3.3`
 - StoryBook: `6.5.15`
 
 ## Running the application
