@@ -29,7 +29,7 @@ function App() {
             <img src="/meteor.svg" className="w-8"></img>
             <p className="text-lg font-semibold">Meteor</p>
           </div>
-          <div className={TAG_CLASS}>v2.13.1</div>
+          <div className={TAG_CLASS}>v2.15</div>
         </div>
         <div className={BOX_CLASS}>
           <div className="flex items-center gap-4">
