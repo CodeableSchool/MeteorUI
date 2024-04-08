@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import DarkToggle from "./components/DarkToggle";
 
 import VERSIONS from "/package.json";
@@ -58,18 +58,9 @@ function App() {
             v{VERSIONS.devDependencies.tailwindcss.replace("^", "")}
           </div>
         </div>
-        <div className={BOX_CLASS}>
-          <div className="flex items-center gap-4">
-            <img src="/storybook.png" className="w-8"></img>
-            <p className="text-lg font-semibold ">StoryBook</p>
-          </div>
-          <div className={TAG_CLASS}>
-            v{VERSIONS.devDependencies["@storybook/react"].replace("^", "")}
-          </div>
-        </div>
       </div>
       <p className="text-xs italic md:text-base text-slate-400">
-        Last updated: 8 September 2023
+        Last updated: 8 April 2024
       </p>
     </div>
   );
