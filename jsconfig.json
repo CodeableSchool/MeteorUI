@@ -1,0 +1,62 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "allowJs": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "/*": [
+        "./*"
+      ],
+      "meteor/mongo": [
+        "/Users/maxwell/.meteor/packages/mongo/2.0.0/web.browser/local_collection_driver.js",
+        "/Users/maxwell/.meteor/packages/mongo/2.0.0/web.browser/collection.js",
+        "/Users/maxwell/.meteor/packages/mongo/2.0.0/web.browser/connection_options.js",
+        "/Users/maxwell/.meteor/packages/mongo/2.0.0/web.browser/doc_fetcher.js",
+        "/Users/maxwell/.meteor/packages/mongo/2.0.0/web.browser/mongo_driver.js",
+        "/Users/maxwell/.meteor/packages/mongo/2.0.0/web.browser/mongo_utils.js",
+        "/Users/maxwell/.meteor/packages/mongo/2.0.0/web.browser/observe_multiplex.js",
+        "/Users/maxwell/.meteor/packages/mongo/2.0.0/web.browser/oplog_observe_driver.js",
+        "/Users/maxwell/.meteor/packages/mongo/2.0.0/web.browser/oplog_tailing.js",
+        "/Users/maxwell/.meteor/packages/mongo/2.0.0/web.browser/oplog_v2_converter.js",
+        "/Users/maxwell/.meteor/packages/mongo/2.0.0/web.browser/polling_observe_driver.js",
+        "/Users/maxwell/.meteor/packages/mongo/2.0.0/web.browser/remote_collection_driver.js"
+      ],
+      "meteor/reactive-var": [
+        "/Users/maxwell/.meteor/packages/reactive-var/1.0.13/web.browser/reactive-var.js"
+      ],
+      "meteor/es5-shim": [
+        "/Users/maxwell/.meteor/packages/es5-shim/4.8.1/web.browser/client.js",
+        "/Users/maxwell/.meteor/packages/es5-shim/4.8.1/web.browser/console.js",
+        "/Users/maxwell/.meteor/packages/es5-shim/4.8.1/web.browser/cordova.js",
+        "/Users/maxwell/.meteor/packages/es5-shim/4.8.1/web.browser/export_globals.js",
+        "/Users/maxwell/.meteor/packages/es5-shim/4.8.1/web.browser/import_globals.js"
+      ],
+      "meteor/ecmascript": [
+        "/Users/maxwell/.meteor/packages/ecmascript/0.16.9/web.browser/ecmascript.js"
+      ],
+      "meteor/shell-server": [
+        "/Users/maxwell/.meteor/packages/shell-server/0.6.0/web.browser/main.js",
+        "/Users/maxwell/.meteor/packages/shell-server/0.6.0/web.browser/shell-server.js"
+      ],
+      "meteor/hot-module-replacement": [
+        "/Users/maxwell/.meteor/packages/hot-module-replacement/0.5.4/web.browser/hot-api.js",
+        "/Users/maxwell/.meteor/packages/hot-module-replacement/0.5.4/web.browser/client.js",
+        "/Users/maxwell/.meteor/packages/hot-module-replacement/0.5.4/web.browser/server.js"
+      ],
+      "meteor/react-meteor-data": [
+        "/Users/maxwell/.meteor/packages/react-meteor-data/2.0.1/web.browser/index.js",
+        "/Users/maxwell/.meteor/packages/react-meteor-data/2.0.1/web.browser/useTracker.js"
+      ]
+    }
+  },
+  "typeAcquisition": {
+    "include": [
+      "meteor"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    ".meteor"
+  ]
+}

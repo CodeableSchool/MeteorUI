@@ -18,6 +18,9 @@ function App() {
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-sky-500">
           MeteorUI
         </span>
+        <span className="py-1 px-2 rounded-md text-primary-500 bg-primary-100 text-sm mb-6 align-top ml-2 dark:text-primary-100 dark:bg-primary-700 dark:border-primary-600 dark:border">
+          v3.0.1
+        </span>
       </h1>
       <p className="px-12 text-base font-normal text-center md:text-lg text-slate-500 lg:text-lg dark:text-slate-400">
         MeteorUI helps you kickstart your following Meteor project by including
@@ -29,7 +32,7 @@ function App() {
             <img src="/meteor.svg" className="w-8"></img>
             <p className="text-lg font-semibold">Meteor</p>
           </div>
-          <div className={TAG_CLASS}>v2.15</div>
+          <div className={TAG_CLASS}>v3.0.1</div>
         </div>
         <div className={BOX_CLASS}>
           <div className="flex items-center gap-4">
@@ -60,7 +63,7 @@ function App() {
         </div>
       </div>
       <p className="text-xs italic md:text-base text-slate-400">
-        Last updated: 8 April 2024
+        Last updated: 29 July 2024
       </p>
     </div>
   );
